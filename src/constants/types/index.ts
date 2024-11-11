@@ -5,3 +5,8 @@ export type Contacts = {
     address: string,
     email: string,
 }
+
+export type TextContent = {
+    id: string,
+    text: string
+}
