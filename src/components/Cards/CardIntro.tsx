@@ -1,17 +1,45 @@
 import React from 'react'
+import Image from "next/image";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import Btn from '../Buttons/Btn';
 
-const CardIntro = () => {
+type MyProps = {
+  id: string,
+  alt: string,
+  immagine: string,
+  text: string,
+  bottone: string,
+  goTo: string
+
+}
+
+export default function CardIntro(testo: MyProps){
   return (
-    <div className='px-8 py-8'>
-        <div className='flex items-center justify-center '>
-            <p className='text-black border-2 border-sky-500 py-4 px-4 rounded-lg'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br/>
-            Sunt, aspernatur sint assumenda commodi quo saepe voluptatem <br/>
-            numquam minus dolorem voluptates
-            </p>
+    <div className='px-10 text-black '>
+
+      <fieldset className='bg-gradient-to-t from-white to-90% rounded-lg' 
+      style={{ borderWidth: 3, borderColor: '#04A4D4', borderRadius: 4 }} >
+        
+        <legend>    
+          <Image className='m-2' key={testo.id}
+          src={testo.immagine} alt={testo.alt} width={30} height={60}/>    
+        </legend>
+
+        <div className=' '>
+          <p className='text-black text-balance text-center '>
+            {testo.text}
+          </p>
         </div>
+
+        <div className='flex flex-row justify-end p-5'>
+          <Btn bottone={testo.bottone} goTo={testo.goTo}/>
+        </div>
+
+      </fieldset>
+
     </div>
   )
 }
 
-export default CardIntro
+// export default CardIntro

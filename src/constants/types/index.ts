@@ -8,5 +8,10 @@ export type Contacts = {
 
 export type TextContent = {
     id: string,
-    text: string
+    alt: string,
+    immagine: string,
+    text: string,
+    bottone: string,
+    goTo: string
 }
+

@@ -19,3 +19,70 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-Home {
+  background-image: url('/public/Fisio1920mirr.png');
+  
+}
+
+.swiper {
+  width: 420px;
+  height: fit-content;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: px;
+  /* font-weight: bold; */
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: white;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: white;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: white;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: white;
+}
+
+
